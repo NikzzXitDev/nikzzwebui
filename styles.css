@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  margin: 100px auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #f20a0a, #4db8ff);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+p.code {
+  margin: 10px 0 20px;
+  font-size: 0.9em;
+  color: #888;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+}
+
+.setting p {
+  margin: 0;
+  font-size: 16px;
+  color: #ddd;
+}
+
+button.open-game-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  width: 80%;
+}
+
+.gradient-button {
+  background: linear-gradient(90deg, #f20a0a, #0a91f2);
+  color: white;
+  box-shadow: 0px 4px 15px rgba(255, 102, 204, 0.4);
+}
+
+.gradient-button:hover {
+  background: linear-gradient(90deg, #f20a0a, #0a91f2);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.gradient-slider {
+  background: linear-gradient(90deg, #f20a0a, #190af2);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background: linear-gradient(90deg, #f20a0a, #190af2);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #444;
+  font-size: 12px;
+}
